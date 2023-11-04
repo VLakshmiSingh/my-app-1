@@ -3,9 +3,9 @@ node{
 		git branch:'main', url:'https://github.com/VLakshmiSingh/my-app-1.git'
 	}
 	stage('Compile-Package'){
-		//sh 'mvn package'
-                //Get Maven Home path
-                def mvnhome = tool name: 'M2_HOME', type: 'maven'
-                sh "${mvnhome}/bin/mvn package"
+           //sh 'mvn package'
+           //Get Maven Home path
+           def mvnhome = tool name: 'M2_HOME', type: 'maven'
+           sh "${mvnhome}/bin/mvn package"
 	}
 }
